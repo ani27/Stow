@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    tools:context="com.vp6.anish.stow.PhotosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--<GridView-->
+        <!--android:id="@+id/gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:horizontalSpacing="2dp"-->
+        <!--android:numColumns="auto_fit"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:columnWidth="100dp"-->
+
+        <!--android:verticalSpacing="2dp" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+/>
+</RelativeLayout>

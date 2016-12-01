@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:id="@+id/folderlayout"
+
+    style="@style/FolderButton"
+
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/filelistimage"
+        android:src="@drawable/folder"
+       android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="filename"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/filelistimage"
+        android:layout_toEndOf="@id/filelistimage"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="filename"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/filelistimage"
+        android:layout_toEndOf="@id/filelistimage"
+        android:id="@+id/folderid"
+        android:visibility="invisible"/>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_details"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageView2"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+
+        />
+</RelativeLayout>

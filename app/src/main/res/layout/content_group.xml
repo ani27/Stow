@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v4.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.vp6.anish.stow.GroupActivity"
+        tools:showIn="@layout/activity_group"
+        android:id="@+id/SlidingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Members"
+    android:textSize="30dp"
+    android:id="@+id/SlidingPanel_header"
+    android:gravity="center"
+    android:textStyle="bold">
+
+</TextView>
+        <ListView
+            android:id="@+id/MenuList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/SlidingPanel_header">
+        </ListView>
+
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progresscirclelist"
+            android:layout_centerVertical="true"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            android:visibility="gone"
+            ></ProgressBar>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/group_name">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textAlignment="center"
+
+            android:textStyle="bold"
+            android:text="Group Name:"
+            android:textSize="15dp"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:layout_weight="2" />
+
+</LinearLayout>
+        <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_group"
+        android:layout_below="@+id/group_name">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:id="@+id/group_upload"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Loading Files"
+            android:id="@+id/textView_progress"
+            android:layout_above="@+id/group_upload"
+            android:layout_alignLeft="@+id/group_upload"
+            android:layout_alignStart="@+id/group_upload"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Swipe right for members information"
+            android:id="@+id/textView_nogroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:singleLine="false"
+            android:visibility="gone"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.SlidingPaneLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vp6.anish.stow.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:elevation="@dimen/design_bottom_sheet_modal_elevation"
+    android:focusableInTouchMode="false">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:background="@drawable/rectangle">
+ <ImageView
+        android:id="@+id/thumbnail"
+     android:background="@color/textColorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+     android:layout_gravity="center"
+
+     />
+  </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:weightSum="6"
+    android:background="@drawable/rectangle">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/filename"
+        android:textAlignment="center"
+android:background="@color/textColorPrimary"
+        android:layout_weight="1"
+
+        />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/downloadlist"
+        android:layout_weight="5"
+        android:id="@+id/arrowbutton"
+
+        android:background="@drawable/ripple_effect"
+        />
+    </LinearLayout>
+</LinearLayout>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progresscircle"
+        android:layout_centerVertical="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circle_shape"
+        android:visibility="gone"></ProgressBar>
+</com.vp6.anish.stow.SquareLayout>
